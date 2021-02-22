@@ -1,8 +1,8 @@
 [BITS 16]
-[ORG 7C00h] ; origem do endereço do boot da bios
+[ORG 7C00h]         ; origem do endereço do boot da bios
 
 call LoadSystem
-jmp 0800h:0000h ; vamos saltar para o endereço do kernel
+jmp 0800h:0000h     ; vamos saltar para o endereço do kernel
 
 LoadSystem:
     mov ah, 02h     ; vamos escrever
@@ -19,5 +19,5 @@ ret
 
 
 
-times 510 - ($-$$) db 0
-dw 0xAA55
+times 510 - ($-$$) db 0      ; vai incrementar 512 bytes até 0
+dw 0xAA55                    ; + 12 bytes
