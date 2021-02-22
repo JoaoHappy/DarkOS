@@ -11,7 +11,7 @@ LoadSystem:
     mov cl, 2       ; setor 2 cargara o kernel
     mov dh, 0       ; cabeçote 0
     mov dl, 80h     ; primeira ordem de boot
-    mov bx, 0800h   ; endereço que vai guarda codigo do kernel, segmento de dados
+    mov bx, 0800h   ; endereço que vai guarda codigo do kernel, (segmento de dados)
     mov es, bx      ; segmenting extra
     mov bx, 0000h
     int 13h         ; interrupção de disco
