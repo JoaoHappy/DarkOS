@@ -1,4 +1,5 @@
 # DarkOS
 System x86 in assembly
 
-Bootloader [x]
+Bootloader        [x]
+Chamada de kernel [x]
