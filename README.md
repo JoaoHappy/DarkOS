@@ -1,5 +1,3 @@
 # DarkOS
-System x86 in assembly
+System x86 in C.
 
-Bootloader        [x]
-Chamada de kernel [x]
